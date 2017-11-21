@@ -1,0 +1,31 @@
+{
+	"name": "PHPEditor",
+	"version": "0.01",
+	"author": [
+		"[http://mwstake.org Mark A. Hershberger]"
+	],
+	"url": "http://git-media.wiki",
+	"descriptionmsg": "phpeditor-desc",
+	"license-name": "GPL-2.0+",
+	"type": "other",
+	"MessagesDirs": {
+		"PHPEditor": "i18n"
+	},
+	"callback": "PHPEditor\\Hooks::onRegistration",
+	"Hooks": {
+		"CodeEditorGetPageLanguage": "PHPEditor\\Hooks::onCodeEditorGetPageLanguage",
+		"ContentHandlerForModelID": "PHPPEditor\\Hooks::onContentHandlerForModelID"
+	},
+	"ContentHandlers": {
+		"php": "PHPEditor\\ContentHandler"
+	},
+	"SyntaxHighlightModels": {
+		"php": "php"
+	},
+	"AutoloadClasses": {
+		"PHPEditor\\Hooks": "src/Hooks.php",
+		"PHPEditor\\ContentHandler": "src/ContentHandler.php",
+		"PHPEditor\\Content": "src/Content.php"
+	},
+	"manifest_version": 1
+}
