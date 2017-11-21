@@ -1,0 +1,6 @@
+== Extend CodeEditor to handle PHP code ==
+
+This code was used to demonstrate the git-mediawiki remote for git.  It allows you to edit PHP code on a MediaWiki website.
+
+This depends on the [https://www.mediawiki.org/wiki/Extension:CodeEditor CodeEditor extension] and extends it by providing the glue code so that CodeEditor will behave properly with pages titled .php.
+
