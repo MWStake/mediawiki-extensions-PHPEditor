@@ -6,7 +6,7 @@
 	],
 	"url": "http://git-media.wiki",
 	"descriptionmsg": "phpeditor-desc",
-	"license-name": "GPL-2.0+",
+	"license-name": "GPL-3.0-or-later",
 	"type": "other",
 	"MessagesDirs": {
 		"PHPEditor": "i18n"
